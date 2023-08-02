@@ -21,7 +21,7 @@ class Activity3 : AppCompatActivity() {
         }
 
         // by back button it finishing this activity
-        
+
         btBack3.setOnClickListener{
            finish()
 

@@ -1,10 +1,9 @@
 package com.jay.wackiestapp.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.jay.wackiestapp.MainActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.jay.wackiestapp.R
 
 class Activity1 : AppCompatActivity() {

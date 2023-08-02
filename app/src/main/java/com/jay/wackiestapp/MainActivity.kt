@@ -7,7 +7,7 @@ import android.widget.Button
 import com.jay.wackiestapp.activity.Activity1
 import com.jay.wackiestapp.activity.BroadcastReceiverActivity
 import com.jay.wackiestapp.activity.ContentProviderActivity
-import com.jay.wackiestapp.activity.ServiceActivity
+import com.jay.wackiestapp.services.ServiceActivity
 
 
 class MainActivity : AppCompatActivity() {

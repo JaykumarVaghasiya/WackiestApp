@@ -2,7 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
+        android:name=".services.LocationApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,6 +22,10 @@
         android:theme="@style/Theme.WackiestApp"
         tools:targetApi="31"
         >
+        <service android:name=".services.LocationService"
+            android:foregroundServiceType="location"/>
+
+
         <activity
             android:name=".activity.BroadcastReceiverActivity"
             android:exported="false" />
@@ -20,8 +33,10 @@
             android:name=".activity.ContentProviderActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ServiceActivity"
-            android:exported="false" />
+            android:name=".services.ServiceActivity"
+            android:exported="false"
+        />
+
         <activity
             android:name=".activity.Activity4"
             android:exported="false"
@@ -44,13 +59,16 @@
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleInstance"
+
            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
