@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val btActivity=findViewById<Button>(R.id.btActivity)
         val btServices=findViewById<Button>(R.id.btServices)
         val btContentProvider=findViewById<Button>(R.id.btContentProvider)
-        val btnBroadcastReceiver=findViewById<Button>(R.id.btBrodcastReceiver)
+        val btnBroadcastReceiver=findViewById<Button>(R.id.btBroadcastReceiver)
 
         btActivity.setOnClickListener{
             val intent= Intent(this@MainActivity,Activity1::class.java)
