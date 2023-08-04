@@ -1,17 +1,15 @@
 package com.jay.wackiestapp.activity
 
-import android.app.Activity
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.result.ActivityResultCallback
-import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import com.jay.wackiestapp.R
 
 class Activity4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContentView(R.layout.activity_4)
 
 
@@ -27,12 +25,6 @@ class Activity4 : AppCompatActivity() {
 
         finishAffinity()
         }
-    }
-
-
-
-
-
-
+    }//====================onCreate Ends=======================
 }
 

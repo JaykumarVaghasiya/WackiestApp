@@ -4,11 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import com.jay.wackiestapp.R
 
 class Activity1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContentView(R.layout.activity_1)
 
         val btNext1=findViewById<Button>(R.id.btNext1)
@@ -28,5 +30,5 @@ class Activity1 : AppCompatActivity() {
         btBack1.setOnClickListener{
             finish()
         }
-    }
+    }//====================onCreate Ends=======================
 }

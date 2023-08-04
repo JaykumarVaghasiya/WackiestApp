@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="4dp"
+    android:background="@android:color/holo_orange_dark"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,38 +13,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:background="#008080"
+
+        android:layout_marginTop="32dp"
         android:padding="5dp"
-        android:text="YO!!!"
+        android:text="@string/yo"
         android:textColor="#fff"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="@android:color/holo_red_dark"
         android:layout_below="@id/text"
-        android:layout_marginTop="100dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:text="Start"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/black"
+        android:text="@string/start"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:layout_below="@id/btStart"
-        android:layout_marginTop="100dp"
-        android:textColor="@android:color/holo_red_dark"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/black"
-        android:text="Stop"
+        android:text="@string/stop"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btStart"
+        app:layout_constraintStart_toStartOf="@+id/btStart"
+        app:layout_constraintTop_toBottomOf="@+id/btStart" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

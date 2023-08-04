@@ -1,19 +1,21 @@
 package com.jay.wackiestapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import com.jay.wackiestapp.activity.Activity1
-import com.jay.wackiestapp.activity.BroadcastReceiverActivity
-import com.jay.wackiestapp.activity.ContentProviderActivity
+import com.jay.wackiestapp.contentProvider.ContentProviderActivity
 import com.jay.wackiestapp.services.ServiceActivity
 
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContentView(R.layout.activity_main)
+
 
         val btActivity=findViewById<Button>(R.id.btActivity)
         val btServices=findViewById<Button>(R.id.btServices)
@@ -38,5 +40,5 @@ class MainActivity : AppCompatActivity() {
             val intent=Intent(this@MainActivity, BroadcastReceiverActivity::class.java)
             startActivity(intent)
         }
-    }
+    }//====================onCreate Ends=======================
 }

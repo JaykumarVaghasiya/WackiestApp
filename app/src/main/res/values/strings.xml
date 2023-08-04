@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">WackiestApp</string>
+    <string name="activity_4">Activity-4</string>
+    <string name="finish">Finish</string>
+    <string name="back">Back</string>
+    <string name="activity_1">Activity-1</string>
+    <string name="next">Next</string>
+    <string name="activity_2">Activity-2</string>
+    <string name="activity_3">Activity-3</string>
+    <string name="type_text">Type Text</string>
+    <string name="start_sending">Start Sending</string>
+    <string name="send">Send</string>
+    <string name="stop_sending">Stop Sending</string>
+    <string name="activity">Activity</string>
+    <string name="services">Services</string>
+    <string name="content_provider">Content Provider</string>
+    <string name="broadcast_receiver">Broadcast Receiver</string>
+    <string name="yo">YO-;)</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
 </resources>

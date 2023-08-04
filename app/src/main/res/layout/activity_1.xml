@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.Activity1"
+    android:background="@android:color/holo_orange_dark"
     android:gravity="center"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity-1"
+        android:text="@string/activity_1"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
-        android:textSize="20dp"
+        android:textSize="28sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
         />
 
     <Button
         android:id="@+id/btNext1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
         android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/btBack1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:text="@string/back"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
         android:layout_margin="10dp"/>
 
 </LinearLayout>

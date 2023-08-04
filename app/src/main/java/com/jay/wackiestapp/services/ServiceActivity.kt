@@ -6,13 +6,17 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import androidx.core.view.WindowCompat
 import com.jay.wackiestapp.R
 
 class ServiceActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContentView(R.layout.activity_service)
+
+        //requesting permissions for location
 
         ActivityCompat.requestPermissions(
             this,
@@ -38,5 +42,5 @@ class ServiceActivity : AppCompatActivity() {
             }
         }
 
-    }
+    }//====================onCreate Ends=======================
 }
